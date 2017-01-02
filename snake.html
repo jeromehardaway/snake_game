@@ -77,6 +77,12 @@
     ctx.fillStyle = color;
     circle(centerX, centerY, blockSize);
   };
+
+  // check if this block is in the same location as another block
+  Block.prototype.equal = function (otherBlock) {
+    return this.col === otherBlock.col && this row === otherBlock.row;
+  };
+
   
   </script>
 </body>
